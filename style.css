@@ -1,0 +1,437 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+   
+}
+
+/*----------------------- here working for navigation---------- */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+/* background-color: antiquewhite; */
+    padding: 2rem 0rem;
+}
+.logo{
+    color: #002265;
+    transition: 0.3s all ease-in-out;
+}
+.logo p{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.logo  span{
+    font-weight: 400;
+}
+nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.35rem;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+   
+}
+nav ul li a{
+    text-decoration: none;
+     /* background-color: red; */
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+nav ul  button{
+    padding: 0.5rem 0.9rem;
+    background-color: #608AF5;
+    color: white;
+    font-weight: 400;
+    font-size: 1.35rem;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+    
+}
+nav ul  button a{
+    color: white;
+    text-decoration: none;
+}
+span i{
+    font-size: 2rem;
+    color: navy;
+    
+    
+}
+#bar{
+    display: none;
+}
+/* -----------------here working for hovering in navigation--------------------- */
+.logo:hover{
+    transform: skew(20deg), scale 1.04;
+    cursor: pointer;
+    scale: 1.04;
+}
+nav ul  button:hover{
+    color: rgb(225, 225, 225);
+    background-color: #002265;
+}
+nav ul li a:hover{
+    color: rgb(225, 225, 225);
+    background-color: #002265;
+}
+
+/* ---------now working for hero section--------- */
+
+main{
+    width: 100%;
+
+}
+.hero{
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    color: #002265;
+    margin-top: 3.5rem;
+
+}
+.left{
+    /* background-color: yellow; */
+    width: 50%;
+    /* padding-top: 2rem; */
+    line-height: 3.3rem;
+}
+.left #hi{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.left #intro{
+    font-size: 2.5rem;
+}
+.left p{
+    margin-top: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+
+
+
+.right{
+    width: 50%;
+    /* background-color: navy; */
+   
+}
+.hero-image{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    /* align-items: center; */
+}
+.hero-image img{
+    width: 60%;
+    
+}
+
+
+/* --------------additional passion section------------ */
+.passion{
+    width: 80%;
+    margin: auto;
+    margin-top: 5.4rem;
+}
+.passion h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:  #002265;
+    
+
+}
+.passion h1 span{
+    font-weight: 500;
+    color: #14279B;
+   
+}
+
+.add-cards{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0.5rem 0rem;
+}
+.passions{
+    width: 30%;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(205, 205, 205);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.passion-image img{
+    width: 100%;
+}
+.passions:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 12px rgb(69, 68, 68);
+}
+
+.passion-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+}
+
+.passion-text h1 span{
+    font-weight: 600;
+    color: navy;
+}
+
+.passion-text p{
+    font-size: 1.3rem;
+}
+/* ------------passion section ends here------------------------- */
+
+/* -----------port folio section starts from here */
+
+.portfolio{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* border: 2px solid black; */
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+    margin-top: 7rem ;
+    
+
+}
+.portfolio h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #002265;
+}
+.portfolio h1 span{
+    font-weight: 500;
+    color: #14279B;
+}
+.portfolio span{
+    color: blue;
+    
+}
+.port-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card{
+    width: 30%;
+    box-shadow: 0px 0px 10px rgb(181, 179, 179);
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: start;
+    padding: 1rem 0.6rem;
+    transition: 0.3s all ease-in-out;
+}
+.card:hover{
+    box-shadow: 0px 0px 12px rgb(70, 70, 70);
+    transform: scale(1.04);
+}
+.card h1{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #6c63ff;
+}
+.card h1 img{
+    width: 2rem;
+}
+.card > img{
+    width: 90%;
+    /* margin-left: 2.7rem; */
+}
+
+/* ----------portfolio section ends here-------------- */
+
+.contact{
+    width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+}
+.contact h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #002265;
+
+}
+.contact h1 span{
+   font-weight: 500;
+   letter-spacing: 2px;
+   color: #14279B;
+}
+.link{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-link-1 i{
+    background-color: #608af5;
+    font-size: 6rem;
+    padding: 1.7rem;
+    color: white;
+    border-radius: 60% 40% 30% 70% / 60% 30%  70% 40% ;
+    animation:morph 5s ease-in-out infinite;
+    
+}
+ @keyframes morph { 
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30%  70% 40%;
+    }
+    50%{
+        border-radius: 40% 60% 70% 40% / 50% 70%  60% 70%;
+    }
+    100%{
+         border-radius: 60% 40% 30% 70% / 60% 30%  70% 40%;
+    }
+} 
+
+.contact-link-2 i{
+    background-color: #608af5;
+    font-size: 6rem;
+    padding: 1.7rem;
+    color: white;
+    border-radius: 40% 60% 70% 30% / 30% 50%  40% 70% ;
+    animation:york 5s ease-in-out infinite;
+    
+}
+
+@keyframes york { 
+    0%{
+        border-radius: 40% 60% 70% 30% / 30% 50%  40% 70% ;
+    }
+    50%{
+        border-radius: 50% 40% 50% 70% / 50% 70%  60% 40%;
+    }
+    100%{
+        border-radius: 40% 60% 70% 30% / 30% 50%  40% 70% ;
+    }
+} 
+
+.footer-image{
+ 
+    width: 100%;
+    height: 18rem;
+    margin-top: 0rem;
+    background-image: url(./file-images/Vector.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+}
+.footer-image h1{
+    margin-bottom: 1.3rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+   nav ul{
+    gap: 1.5rem;
+   }
+  }
+
+@media screen and (max-width: 800px) {
+   nav ul {
+    display: none;
+   }
+ 
+  #bar{
+    display: block;
+  }
+}
+  @media screen and (max-width: 1050px) {
+    .hero-image img{
+        width: 90%;
+    }
+
+   }
+   @media screen and (max-width: 650px) {
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .right{
+        width: 100%;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+
+    .add-cards{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .passions{
+        width: 100%;
+        
+    }
+    
+.port-cards{
+    flex-direction: column;
+    gap: 2rem;
+}
+    .card{
+        width: 100%;
+    }
+    .portfolio{
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+    .link{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    /* .footer-image{
+        width: 80%;
+    } */
+   }
